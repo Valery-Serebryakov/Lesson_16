@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_16</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">я header</header>
+      <main class="main">
+        <div class="make">
+          <div class="make__container">
+            <div class="make__content">
+              <div class="make__title">Make an appointment</div>
+              <form class="make__form" action="#">
+                <div class="make__top-form">
+                  <input class="make__name form-item" type="text" name="name" placeholder="Name" autocomplete="off">
+                  <input class="make__email form-item" type="email" name="email" placeholder="Email" autocomplete="off">
+                  <input class="make__phone form-item" type="tel" name="phone-number" placeholder="Phone number" autocomplete="off">
+                  <input class="make__service form-item" type="text" name="service" placeholder="Select Service" autocomplete="off">
+                  <textarea class="make__tell-us form-item" name="tell-us" placeholder="Tell us about your puppers include his/her name"></textarea>
+                </div>
+                <div class="make__bottom-form">
+                  <button class="make__buttom" type="submit">Make an Appointment</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="registered-customers">
+          <div class="registered-customers__container">
+            <div class="registered-customers__content">
+              <div class="registered-customers__title">Registered Customers</div>
+              <div class="registered-customers__signature">If you have an account, sign in with your email address.</div>
+              <form action="#" class="registered-customers__form">
+                <div class="registered-customers__email item-form">
+                  <label class="item-form__label" for="email">Email <span>*</span></label>
+                  <input class="item-form__input" id="email" type="email" name="email" placeholder="Your Name" autocomplete="off">
+                </div>
+                <div class="registered-customers__password item-form">
+                  <label class="item-form__label" for="password">Password <span>*</span></label>
+                  <input class="item-form__input" id="password" type="password" name="password" placeholder="Your Name" autocomplete="off">
+                </div>
+                <div class="registered-customers__bottom">
+                  <button class="registered-customers__button" type="submit">Sign In</button>
+                  <a href="https://fls.guru/flexbox.html" class="registered-customers__link">Forgot Your Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="summary__container">
+            <div class="summary__content">
+              <div class="summary__title">Summary</div>
+              <form class="summary__form" action="#">
+                <div class="summary__top">
+                  <select class="summary__estimate select" name="estimate">
+                    <option class="select__item" value="Estimate Shipping and Tax">Estimate Shipping and Tax</option>
+                    <option class="select__item" value="Estimate Shipping and Tax">Estimate Shipping and Tax</option>
+                    <option class="select__item" value="Estimate Shipping and Tax">Estimate Shipping and Tax</option>
+                  </select>
+                  <div class="summary__label">Enter your destination to get a shipping estimate.</div>
+                </div>
+                <div class="summary__country drop-down-list">
+                  <label class="drop-down-list__label" for="country">Country</label>
+                  <select class="drop-down-list__select" name="country">
+                    <option class="drop-down-list__item" value="Australia">Australia</option>
+                    <option class="drop-down-list__item" value="Russia">Russia</option>
+                    <option class="drop-down-list__item" value="USA">USA</option>
+                  </select>
+                </div>
+                <div class="summary__state item-form">
+                  <label class="item-form__label" for="state">State/Province</label>
+                  <input class="item-form__input" id="state" type="text" name="state" autocomplete="off">
+                </div>
+                <div class="summary__zip item-form">
+                  <label class="item-form__label" for="zip">Zip/Postal Code</label>
+                  <input class="item-form__input" id="zip" type="text" name="zip" autocomplete="off">
+                </div>
+                <div class="summary__checkbox">
+                  <div class="summary__standard-rate checkbox-items">
+                    <div class="checkbox-items__caption">Standard Rate</div>
+                    <input class="checkbox-items__input" id="standard-rate" type="checkbox" name="standard-rate">
+                    <label class="checkbox-items__label" for="standard-rate">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                  </div>
+                  <div class="summary__pickup-from-store checkbox-items">
+                    <div class="checkbox-items__caption">Pickup from store</div>
+                    <input class="checkbox-items__input" id="pickup-from-store" type="checkbox" name="pickup from store">
+                    <label class="checkbox-items__label" for="pickup-from-store">1234 Street Adress City Address, 1234 $0.00</label>
+                  </div>
+                </div>
+                <select class="summary__discount select" name="discount">
+                  <option class="select__item" value="Apply Discount Code">Apply Discount Code</option>
+                  <option class="select__item" value="Apply Discount Code">Apply Discount Code</option>
+                  <option class="select__item" value="Apply Discount Code">Apply Discount Code</option>
+                </select>
+                <div class="summary__discount-code item-form">
+                  <label class="item-form__label" for="discount-code">Enter discount code</label>
+                  <input class="item-form__input" id="discount-code" placeholder="Enter Discount code" type="text" name="discount code" autocomplete="off">
+                </div>
+                <button type="submit" class="summary__button">Apply Discount</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="shipping-address">
+          <div class="shipping-address__container">
+            <div class="shipping-address__content">
+              <div class="shipping-address__title">Shipping Address</div>
+              <form class="shipping-address__form" action="#">
+                <div class="shipping-address__email item-form">
+                  <label class="item-form__label" for="email-address">Email Address <span>*</span></label>
+                  <input class="item-form__input" id="email-address" type="email" name="email address" autocomplete="off">
+                </div>
+                <div class="shipping-address__desc">You can create an account after checkout.</div>
+                <div class="shipping-address__first-name item-form">
+                  <label class="item-form__label" for="first-name">First Name <span>*</span></label>
+                  <input class="item-form__input" id="first-name" type="text" name="first-name" autocomplete="off">
+                </div>
+                <div class="shipping-address__last-name item-form">
+                  <label class="item-form__label" for="last-name">Last Name <span>*</span></label>
+                  <input class="item-form__input" id="last-name" type="text" name="last-name" autocomplete="off">
+                </div>
+                <div class="shipping-address__company item-form">
+                  <label class="item-form__label" for="company">Company <span>*</span></label>
+                  <input class="item-form__input" id="company" type="text" name="company" autocomplete="off">
+                </div>
+                <div class="shipping-address__street-address item-form">
+                  <label class="item-form__label" for="street-address">Street Address <span>*</span></label>
+                  <input class="item-form__input" id="street-address" type="text" name="street-address" autocomplete="off">
+                </div>
+                <div class="shipping-address__street-address-2 item-form">
+                  <input class="item-form__input" id="street-address-2" type="text" name="street-address-2" autocomplete="off">
+                </div>
+                <div class="shipping-address__city item-form">
+                  <label class="item-form__label" for="city">City <span>*</span></label>
+                  <input class="item-form__input" id="city" type="text" name="city" autocomplete="off">
+                </div>
+                <div class="shipping-address__state-province drop-down-list">
+                  <label class="drop-down-list__label" for="state-province">State/Province <span>*</span></label>
+                  <select class="drop-down-list__select" name="state-province">
+                    <option class="drop-down-list__item" value="Please, select a region, state or province">Please, select a region, state or province</option>
+                    <option class="drop-down-list__item" value="Please, select a region, state or province">Please, select a region, state or province</option>
+                    <option class="drop-down-list__item" value="Please, select a region, state or province">Please, select a region, state or province</option>
+                  </select>
+                </div>
+                <div class="shipping-address__zip item-form">
+                  <label class="item-form__label" for="postal">Zip/Postal Code <span>*</span></label>
+                  <input class="item-form__input" id="postal" type="text" name="zip/postal code" autocomplete="off">
+                </div>
+                <div class="shipping-address__country drop-down-list">
+                  <label class="drop-down-list__label" for="Country">United States <span>*</span></label>
+                  <select class="drop-down-list__select" name="Country">
+                    <option class="drop-down-list__item" value="United States">United States</option>
+                    <option class="drop-down-list__item" value="United States">United States</option>
+                    <option class="drop-down-list__item" value="United States">United States</option>
+                  </select>
+                </div>
+                <div class="shipping-address__phone-number item-form">
+                  <label class="item-form__label" for="zip/postal">Phone Number <span>*</span></label>
+                  <input class="item-form__input" id="zip/postal" type="tel" name="Phone Number" autocomplete="off">
+                </div>
+                <div class="shipping-address__checkbox">
+                  <div class="shipping-address__standard-rate checkbox-items">
+                    <div class="checkbox-items__caption">Standard Rate</div>
+                    <input class="checkbox-items__input" id="standard-rate-2" type="checkbox" name="standard-rate">
+                    <label class="checkbox-items__label" for="standard-rate-2">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                  </div>
+                  <div class="shipping-address__pickup-from-store checkbox-items">
+                    <div class="checkbox-items__caption">Pickup from store</div>
+                    <input class="checkbox-items__input" id="pickup-from-store-2" type="checkbox" name="pickup from store">
+                    <label class="checkbox-items__label" for="pickup-from-store-2">1234 Street Adress City Address, 1234 $0.00</label>
+                  </div>
+                </div>
+                <button class="shipping-address__button" type="submit">Next</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">я footer</footer>
+    </div>
+  </body>
+
+</html>
